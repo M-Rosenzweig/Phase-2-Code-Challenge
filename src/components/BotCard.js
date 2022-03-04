@@ -15,10 +15,10 @@ function BotCard({ bot, handleClick, fullDelete }) {
       <div
         className="ui card"
         key={bot.id}
-        onClick={() => handleClick(bot)}
+        
       >
         <div className="image">
-          <img alt="oh no!" src={bot.avatar_url} />
+          <img onClick={() => handleClick(bot) } alt="oh no!" src={bot.avatar_url}  />
         </div>
         <div className="content">
           <div className="header">
